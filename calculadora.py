@@ -6,16 +6,20 @@ def suma(x, y):
 def resta(x, y):
     return x - y
 
+def multiplicar(x, y):
+    return x * y
+
 while True:
     print("Opciones:")
     print("Ingrese 'suma' para sumar dos números")
     print("Ingrese 'resta' para restar dos números")
+    print("Ingrese 'multiplica' para multiplicar dos números")
     print("Ingrese 'salir' para finalizar el programa")
     user_input = input(": ")
 
     if user_input == "salir":
         break
-    elif user_input in ("suma", "resta"):
+    elif user_input in ("suma", "resta", "multiplica"):
         x = float(input("Ingrese el primer número: "))
         y = float(input("Ingrese el segundo número: "))
 
@@ -23,5 +27,7 @@ while True:
             print(suma(x, y))
         elif user_input == "resta":
             print(resta(x, y))
+        elif user_input == "multiplica":
+            print(multiplica(x, y))
     else:
         print("Entrada no válida")
