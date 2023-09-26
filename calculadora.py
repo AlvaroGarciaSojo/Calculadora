@@ -1,21 +1,27 @@
 #!C:\Users\zx20student197\AppData\Local\Programs\Python\Python311\python.exe
 
-def sumar(x, y):
+def suma(x, y):
     return x + y
+
+def resta(x, y):
+    return x - y
 
 while True:
     print("Opciones:")
-    print("Ingrese 'sumar' para sumar dos números")
+    print("Ingrese 'suma' para sumar dos números")
+    print("Ingrese 'resta' para restar dos números")
     print("Ingrese 'salir' para finalizar el programa")
     user_input = input(": ")
 
     if user_input == "salir":
         break
-    elif user_input in ("suma"):
+    elif user_input in ("suma", "resta"):
         x = float(input("Ingrese el primer número: "))
         y = float(input("Ingrese el segundo número: "))
 
         if user_input == "suma":
             print(suma(x, y))
+        elif user_input == "resta":
+            print(resta(x, y))
     else:
         print("Entrada no válida")
