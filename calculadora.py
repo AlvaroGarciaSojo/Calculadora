@@ -14,6 +14,7 @@ while True:
     print("Ingrese 'suma' para sumar dos números")
     print("Ingrese 'resta' para restar dos números")
     print("Ingrese 'multiplica' para multiplicar dos números")
+    print("Ingrese 'divide' para multiplicar dos números")
     print("Ingrese 'salir' para finalizar el programa")
     user_input = input(": ")
 
@@ -28,6 +29,8 @@ while True:
         elif user_input == "resta":
             print(resta(x, y))
         elif user_input == "multiplica":
+            print(multiplica(x, y))
+        elif user_input == "divide":
             print(multiplica(x, y))
     else:
         print("Entrada no válida")
