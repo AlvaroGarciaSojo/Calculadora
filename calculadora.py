@@ -11,7 +11,7 @@ def multiplicar(x, y):
 
 while True:
     print("Opciones:")
-    print("Ingrese 'suma' para sumar dos números")
+    print("Ingrese 'sumar' para sumar dos números")
     print("Ingrese 'resta' para restar dos números")
     print("Ingrese 'multiplica' para multiplicar dos números")
     print("Ingrese 'divide' para multiplicar dos números")
@@ -24,7 +24,7 @@ while True:
         x = float(input("Ingrese el primer número: "))
         y = float(input("Ingrese el segundo número: "))
 
-        if user_input == "suma":
+        if user_input == "sumar":
             print(suma(x, y))
         elif user_input == "resta":
             print(resta(x, y))
